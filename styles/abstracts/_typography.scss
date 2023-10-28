@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200;1,300;1,400;1,800&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+}
+
+label{
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+}
+input{
+  font-size: clamp(2rem, 2vw, 3rem);
+  font-weight: 600;
+}
+h2,em{
+  font-size: clamp(3rem, 10vw, 10rem);
+  font-style: italic;
+}
+select{
+  font-size: clamp(1.4rem, 1.5vw, 1.7rem);
+  outline: none;
+  option{
+    font-size: 1.5rem;
+  }
+}
+small{
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  font-weight: 300;
+}

@@ -1,0 +1,82 @@
+@use '../abstracts/mixins' as abst;
+@use '../abstracts/breakpoints' as br;
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  list-style: none;
+  border: none;
+  line-height: 1.15;
+}
+
+body{
+  min-width: 34rem;
+}
+.languages{
+  position: absolute;
+  right: clamp(0.5rem, 5vw, 3rem);
+  top: 10px;
+  select{
+    width: clamp(8rem, 1.5vw, 12rem);
+    height: 50px;
+  }
+}
+main{
+  width: 95%;
+  padding: 2rem 4rem;
+  margin: 10rem auto;
+  border-radius: 2rem 2rem 10rem 2rem;
+
+  @include br.breakpoint-up(desktop){
+  width: 55%;
+  border-radius: 2rem 2rem 10rem 2rem;
+  margin: 1.5rem auto;
+  }
+  form{
+    width: 100%;
+    @include abst.fleX(row, start);
+    align-items: start;
+    gap: 3%;
+    position: relative;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+    @include br.breakpoint-up(desktop){
+    padding: 5rem 22rem 3rem 5rem;
+    gap: 2rem;
+    }
+    .inputsBox{
+      @include abst.fleX(column, center);
+      gap: 1rem;
+      width: 33%; //strange behaviour
+      input{
+       height: clamp(5.5rem, 10vw,7rem);
+       padding-left: 10%;
+       border-radius: 0.7rem;
+       border-width: 0.1rem;
+      }
+      input::-webkit-inner-spin-button{
+        appearance: none;
+      }
+    }
+    button{
+      position: absolute;
+      bottom: -4.1rem;
+      right: 50%;
+      transform: translateX(50%);
+      padding: clamp(1rem, 2vw, 2.7rem);
+      border-radius: 50%;
+      cursor: pointer;
+      @include br.breakpoint-up(desktop){
+        right: 6%;
+        bottom: -5rem;
+      }
+    }
+  }
+  .outputs{
+        padding: 4rem 2rem 7rem 0rem;
+        @include br.breakpoint-up(desktop){
+          padding: 4rem 2rem 7rem 4rem;
+        }
+  }
+}

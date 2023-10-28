@@ -7,3 +7,40 @@
   --smokey-grey: hsl(0, 1%, 44%);
   --off-black: hsl(0, 0%, 8%);
 }
+
+.off-white{
+  background-color: var(--off-white);
+}
+.white{
+  background-color: var(--white);
+}
+em{
+  color: var(--Purple);
+}
+.red,small{
+  color: var(--Light_red);
+  border-color: var(--Light_red);
+}
+form{
+  border-bottom: 1px solid var(--light-grey);
+}
+label{
+  color: var(--smokey-grey);
+}
+input{
+  color: var(--off-black);
+  border: 2px solid var(--light-grey);
+}
+input:focus{
+  outline: solid 2px var(--Purple);
+}
+button{
+  background-color: var(--Purple);
+  transition: 0.3s;
+}
+button:hover{
+ background-color: var(--off-black);
+}
+button:active{
+ opacity: 0.6;
+}

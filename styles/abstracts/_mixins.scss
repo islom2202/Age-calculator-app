@@ -1,0 +1,5 @@
+@mixin fleX($direction,$jus-content){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jus-content;
+}

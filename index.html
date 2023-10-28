@@ -6,26 +6,39 @@
   <title>Frontend Mentor | Age calculator app</title>
   <link rel="stylesheet" href="./dist/main.css">
 </head>
-<body>
-  <main>
-    <header>
-      <input type="text" placeholder="DD">
-      <input type="text" placeholder="MM">
-      <input type="text" placeholder="YYYY">
-    </header>
-    <section>
-      <h2>
-        <span class="years">--</span> years
-      </h2>
-      <h2>
-        <span class="months">--</span> months
-      </h2>
-      <h2>
-        <span class="days">--</span> days
-      </h2>
-    </section>
+<body class="off-white">
+  <main class="white">
+    <!--Input Field-->
+    <form class="inputs" autocomplete="off" novalidate>
+      <div class="inputsBox">
+        <label for="dayInput" class="dayLabel">DAY</label>
+        <input type="number" placeholder="DD" id="dayInput" min="1"  required>
+        <small class="inputsBox__error"></small>
+      </div>
+      <div class="inputsBox">
+        <label for="monthInput" class="monthLabel">MONTH</label>
+        <input type="number" placeholder="MM" id="monthInput" min="1" max="12" required>
+        <small class="inputsBox__error"></small>
+      </div>
+      <div class="inputsBox">
+        <label for="yearInput" class="yearLabel">YEAR</label>
+        <input type="number" placeholder="YYYY" id="yearInput" min="1" required>
+        <small class="inputsBox__error"></small>
+      </div>
+      <button type="submit" class="sumbit">
+        <img src="assets/images/icon-arrow.svg" alt="">
+      </button>
+    </form>
+    <!--Output Field-->
+    <h2 class="outputs">
+      <em id="years">- -</em> 
+      years <br>
+      <em id="months">- -</em> 
+      months <br>
+      <em id="days">- -</em> 
+      days
+    </h2>
   </main>
-  
-  
+  <script src="main.js"></script>
 </body>
 </html>

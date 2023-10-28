@@ -1,0 +1,14 @@
+ I  should learn following from this project:
+ 1. clamp (css)
+ 2. nextSibling (js) 
+ 3. parentElement (js)
+ 4. validity.valueMissing (js)
+ 5. setCustomValidity (js)
+ 6. validationMessage (js)
+ 7. textContent (js)
+ 8. saving 3 or more variables within one anonymous array
+ 9. @use sass:math (sass)
+ 10. math.div within function for converting pixels to rem(sass)
+ 11. checkValidity (js)
+ 12. novalidate (html - attribute for form)
+ 13. autocomplete (html -attribute for form)
